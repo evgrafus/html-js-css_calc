@@ -1,5 +1,5 @@
-const dsp = document.querySelector('#dsp');  //дисплей калькулятора
-const btn1 = document.querySelector('#btn1'); //массив кнопок
+const dsp = document.querySelector('#dsp');  //Display
+const btn1 = document.querySelector('#btn1'); //Buttons 0....9
 const btn2 = document.querySelector('#btn2');
 const btn3 = document.querySelector('#btn3');
 const btn4 = document.querySelector('#btn4');
@@ -10,22 +10,22 @@ const btn8 = document.querySelector('#btn8');
 const btn9 = document.querySelector('#btn9');
 const btn0 = document.querySelector('#btn0');
 const btnC = document.querySelector('#btnC');
-const btn_frt = document.querySelector('#btn_frt'); //кнопка дробной части
-const btn_res = document.querySelector('#btn_res'); //кнопка равно
-const btn_pls = document.querySelector('#btn_pls'); //кнопка сложение
-const btn_mns = document.querySelector('#btn_mns'); //кнопка минус
-const btn_mlt = document.querySelector('#btn_mlt'); //кнопка умножить
-const btn_dvd = document.querySelector('#btn_dvd'); //кнопка делить
-const btn_bsp = document.querySelector('#btn_bsp'); //кнопка стереть
-let set_frt = false; // флаг установки дробной части
-let a,b,res; // переменые вычислений
-let operation; //флаг действия
+const btn_frt = document.querySelector('#btn_frt'); //Button "."
+const btn_res = document.querySelector('#btn_res'); // =
+const btn_pls = document.querySelector('#btn_pls'); // +
+const btn_mns = document.querySelector('#btn_mns'); // -
+const btn_mlt = document.querySelector('#btn_mlt'); // *
+const btn_dvd = document.querySelector('#btn_dvd'); // /
+const btn_bsp = document.querySelector('#btn_bsp'); // <- backspace
+let set_frt = false; // fractional part flag .
+let a,b,res; // vars
+let operation; // operation flag
 function changeType(){
     a = Number(a);
     b = Number(dsp.value);
 }
 function setFloat(){
-    if (set_frt === false && dsp.value !== '') { // Флаг не установлен и не пустая строка?
+    if (set_frt === false && dsp.value !== '') { // not empty string and fraction?
         dsp.value += '.';
         set_frt = true;
     }
@@ -67,7 +67,7 @@ function plus(){
     a = dsp.value;
     dsp.value = '';
     operation = '+';
-    set_frt = false; // Разрешаем дробь во 2м операнде
+    set_frt = false;
 }
 function minus(){
     if(dsp.value === ''){
