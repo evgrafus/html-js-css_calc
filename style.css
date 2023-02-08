@@ -1,0 +1,56 @@
+.container{
+    position: absolute;
+    background-color: rgb(26, 33, 43);
+    height: 397px;
+    width: 296px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 8px solid #5d5c5c;
+    margin: 5% 35%;
+}
+.btn{
+    width: 70px;
+    height: 55px;
+    margin-top: 5px;
+    margin-left: 1px;
+    border-radius: 6px;
+    font-family: "Agency FB";
+    font-size: 20px;
+    background-color: #2b323f;
+    border: none;
+    color: white;
+    #font-weight: bold;
+}
+.btn-d{
+    width: 70px;
+    height: 55px;
+    margin-top: 5px;
+    margin-left: 1px;
+    border-radius: 6px;
+    font-family: "Agency FB";
+    font-size: 20px;
+    background-color:#222731FF;
+    border: none;
+    color: white;
+    #font-weight: bold;
+}
+
+.btn:hover,.btn-d:hover{
+    background-color: rgba(79, 88, 107, 0.74);
+    cursor: pointer;
+}
+.display {
+    margin: 20px 1px;
+    width: 290px;
+    height: 50px;
+    #border-radius: 7px;
+    border: none;
+    font-family:"Agency FB";
+    font-size: 40px;
+    #font-weight: bold;
+    background-color: #2d333d;
+    color: rgb(243, 243, 243);
+}
+body {
+    background-color: rgb(246, 245, 245);
+}
